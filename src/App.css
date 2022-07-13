@@ -1,38 +1,66 @@
-.App {
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body{
+  background-image: url("/src/img/morioh.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: grid;
+}
+.menu{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding: 20px 50px 20px;
+  background:linear-gradient(rgb(25, 10, 32), rgb(72, 75, 87));
+}
+a{
+  text-decoration: none;
+  color: rgb(203, 190, 233);
+  font-weight: bold;
+  font-size: 15px;
+}
+h1{
   text-align: center;
+  margin: 60px 20% 60px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 60px;
+  color: rgb(19, 4, 32);
+  background-image: url("/src/img/hermirt-purple.png");
+  background-size: contain;
+  
+}
+.container{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+.intro{
+  background:linear-gradient(rgba(139, 43, 139, 0.712), rgba(28, 0, 128, 0.712));
+  text-align: justify;
+  margin: 40px;
+  color: aliceblue;
+  font-size: 40px;
+  font-family: cursive;
+  padding: 30px;
+  border-radius: 10px;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.jotaro{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: rgb(30, 0, 58);
+  background-image: url("/src/img/jotaro.png");
+  background-size: cover;
+  padding: 50px;
+  padding-right:30px;
+  margin-top: 80px;
+  text-align: right;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border-radius: 50%;
 }
